@@ -1,0 +1,136 @@
+﻿body {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    background-color: black;
+    font-size: 20px;
+    color: green;
+    font-family: monospace;
+}
+
+#rootDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    overflow: hidden;
+}
+
+#bgCanvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#monitorDiv {
+    position: absolute;
+    width: 900px;
+    height: 0;
+    transition: border-color 0.5s ease-out;
+    transition: border-width 0.5s ease-out;
+    transition: padding 0.5s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: black;
+    border: 0 solid white;
+    display: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+#infoTable {
+    color: green;
+    width: 100%;
+}
+
+    #infoTable td {
+        padding: 2px 5px;
+    }
+
+#basicInfoTitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+    a:after, a:visited, a:active, a:before, a:current {
+        color: greenyellow;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: red;
+    }
+
+
+#basicInfoImg {
+    width: 200px;
+    background-color: greenyellow;
+    height: 250px;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+#rightInfoColumn {
+    width: 335px;
+    height: 590px;
+    float: right;
+    display: block;
+    background-color: transparent;
+}
+
+#leftSideColumn {
+    height: 590px;
+    width: 500px;
+    background-color: black;
+    display: block;
+    margin: 0;
+    padding: 15px;
+}
+#printingContent {
+    position: absolute;
+    width: 480px;
+    bottom: 0;
+    background-color: black;
+}
+
+#printingContent a {
+    float: right;
+}
+
+.blinking {
+    animation: blink-animation 1s linear infinite;
+}
+
+@keyframes blink-animation {
+    90% {
+        opacity: 0.2;
+    }
+}
+
+#basicInfo {
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.9)
+}
+
+pre {
+    white-space: pre-wrap;
+}

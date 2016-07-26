@@ -1,0 +1,63 @@
+﻿@model CV.Models.BasicInfoModel
+<div id="basicInfo">
+
+    <div id="rightInfoColumn">
+
+        <div id="basicInfoTitle">
+            @Res.BasicInfoTitle
+        </div>
+
+        <div id="basicInfoImg">
+
+        </div>
+
+        <table id="infoTable">
+            <tr>
+                <td>@Res.AgeLabel:</td>
+                <td>@Model.Age</td>
+            </tr>
+            <tr>
+                <td>@Res.SexLabel:</td>
+                <td>@Model.Sex</td>
+            </tr>
+            <tr>
+                <td>@Res.CountryLabel:</td>
+                <td>@Model.Country</td>
+            </tr>
+            <tr>
+                <td>@Res.CityLabel:</td>
+                <td>@Model.City</td>
+            </tr>
+            <tr>
+                <td>@Res.LevelLabel:</td>
+                <td>@Model.Level</td>
+            </tr>
+            <tr>
+                <td>@Res.ExperienceLabel:</td>
+                <td>@Model.Experience</td>
+            </tr>
+            <tr>
+                <td>@Res.LocationLabel:</td>
+                <td><a id="companyLabel" target="_blank" href="@Res.CurrentCompanyLink">@Res.CurrentCompany</a></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="leftSideColumn">
+
+        <div id="welcomeText">
+
+        </div>
+
+        <pre id="printingContent">
+
+        </pre>
+
+
+    </div>
+</div>
+<input type="hidden" id="printingSource" value="@Res.AttentionText"/>
+<input type="hidden" id="nextPageLabel" value="@Res.nextPageLabel" />
+
+
