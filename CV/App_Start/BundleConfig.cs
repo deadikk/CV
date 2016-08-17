@@ -30,7 +30,7 @@ namespace CV
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/site.css"));
+                      "~/Content/Styles/site.css"));
         }
     }
 }

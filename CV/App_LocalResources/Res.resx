@@ -123,7 +123,8 @@
   <data name="AttentionText" xml:space="preserve">
     <value>Внимание всем агентам. 
 
-От матрицы был отключен эксперементальный образец разработчика нового поколения ".Net developer 3000". 
+От матрицы был отключен эксперементальный образец разработчика ПО нового поколения 
+".Net Developer 3000". 
 
 Он не вооружен, но изобретателен, непредсказуем и потому чрезвычайно опасен.
 
@@ -132,7 +133,7 @@
 Для более детальной информации перейдите по ссылке:</value>
   </data>
   <data name="BasicInfoTitle" xml:space="preserve">
-    <value>Основная информация</value>
+    <value>ИНФОРМАЦИЯ</value>
   </data>
   <data name="CityLabel" xml:space="preserve">
     <value>Город</value>
@@ -156,8 +157,7 @@
     <value>Уровень</value>
   </data>
   <data name="LocationLabel" xml:space="preserve">
-    <value>Предположительное
-местоположение</value>
+    <value>Где искать</value>
   </data>
   <data name="Male" xml:space="preserve">
     <value>Мужской</value>

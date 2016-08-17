@@ -121,10 +121,20 @@
     <value>Age</value>
   </data>
   <data name="AttentionText" xml:space="preserve">
-    <value>Attention</value>
+    <value>Attention, for all Agents.
+
+Experimental sample of new generation of developers was disconnected.
+
+Code name ".Net Developer 3000".
+
+He isn't armed, but he is inventive and unpredictable that's why very dangerous.
+
+Main info is available on your console.
+
+For more details please follow the link:</value>
   </data>
   <data name="BasicInfoTitle" xml:space="preserve">
-    <value>Main information</value>
+    <value>MAIN INFO</value>
   </data>
   <data name="CityLabel" xml:space="preserve">
     <value>City</value>
