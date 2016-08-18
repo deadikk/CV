@@ -4,7 +4,7 @@
 }
 
 function slowDisplay(elementName) {
-    var maxHeight = 600;
+    var maxHeight = 570;
     var initialSize = 10;
 
     $(elementName).css({
@@ -57,16 +57,6 @@ function startInfoPrinting() {
         fSuccess: function () {
             var str = $('#printingContent').html();
             $('#printingContent').html(str + "  <a class='blinking' href='#' onclick='showPage(\"" + linkForNextPage + "\");'>" + textForLink + "</a>  ");
-
-            //iId = setInterval(function () {
-            //    flag = !flag;
-            //    $('#printingContent').html(str + (flag ? "  <a href='#' onclick='showPage(\"" + linkForNextPage + "\");'>" + textForLink + "</a>  " : ''));
-            //}, 500);
-
-            //setTimeout(function () {
-            //    flag = true;
-            //    clearInterval(iId);
-            //}, 10 * 1000);
         }
     });
 

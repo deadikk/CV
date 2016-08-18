@@ -11,9 +11,11 @@
 <body>
     <div id="rootDiv">
         <canvas class="matrixCanvas" id="bgCanvas"></canvas>
-        @Html.Partial("_MenuPanel", new MenuModel());
-        <div id="monitorDiv">
-            @RenderBody()
+        <div id="MenuWithContent">
+            @Html.Partial("_MenuPanel", new MenuModel())
+            <div id="monitorDiv">
+                @RenderBody()
+            </div>
         </div>
     </div>
 
