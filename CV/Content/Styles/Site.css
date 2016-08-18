@@ -5,17 +5,20 @@
     overflow: auto;
     background-color: black;
     font-size: 20px;
-    color: green;
+    color: rgb(0, 230, 0);
     font-family: Matrix_Font, Courier New, Courier, monospace;
 }
+
 @font-face {
     font-family: 'Matrix_UpperOnly_Font';
     src: url('../Fonts/Matrix_UpperOnly_Font.TTF') format('truetype');
 }
+
 @font-face {
     font-family: 'Matrix_Font';
     src: url('../Fonts/Matrix_Font.ttf') format('truetype');
 }
+
 #rootDiv {
     width: 100%;
     height: 100%;
@@ -35,9 +38,6 @@
     position: absolute;
     width: 900px;
     height: 0;
-    transition: border-color 0.5s ease-out;
-    transition: border-width 0.5s ease-out;
-    transition: padding 0.5s ease-out;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,15 +48,49 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: black;
-    border: 0 solid white;
+    border: 0 solid green;
     display: none;
     padding: 0;
     background-color: transparent;
 }
 
+#menuPanel {
+    width: 950px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: transparent;
+}
+
+#menuList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    text-align-last: justify;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+#menuList li {
+    vertical-align: central;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+#menuList li a{
+    font-size: 30px;
+    font-family: Matrix_UpperOnly_Font;
+}
+
 #infoTable {
-    color: green;
+    color: rgb(0, 230, 0);
     width: 100%;
+        font-family: Courier New, Courier, monospace;
 }
 
     #infoTable td {
@@ -139,7 +173,11 @@ a {
     }
 }
 
-#basicInfo {
+#HomePage {
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.9);
+}
+#AboutPage {
     background-color: #000000;
     background-color: rgba(0,0,0,0.9);
 }

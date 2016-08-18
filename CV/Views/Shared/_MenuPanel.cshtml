@@ -1,0 +1,11 @@
+﻿@model CV.Models.MenuModel
+<div id="menuPanel">
+    <ul id="menuList">
+        @foreach (var item in Model.MenuList)
+        {
+            <li>
+                <a href="#" onclick="showPage('@item.ItemName');">@item.ItemLabel</a>
+            </li>
+        }
+    </ul>
+</div>

@@ -184,4 +184,16 @@ For more details please follow the link:</value>
   <data name="YearsLabel" xml:space="preserve">
     <value>y</value>
   </data>
+  <data name="AboutPageLabel" xml:space="preserve">
+    <value>ABOUT</value>
+  </data>
+  <data name="ContactsPageLabel" xml:space="preserve">
+    <value>CONTACTS</value>
+  </data>
+  <data name="CVPageLabel" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="HomePageLabel" xml:space="preserve">
+    <value>HOME</value>
+  </data>
 </root>

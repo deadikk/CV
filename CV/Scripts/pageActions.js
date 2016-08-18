@@ -1,6 +1,6 @@
 ﻿function FirstOpen() {
     slowDisplay('#monitorDiv');
-   
+    currentPage = ""
 }
 
 function slowDisplay(elementName) {
@@ -9,40 +9,38 @@ function slowDisplay(elementName) {
 
     $(elementName).css({
         'display': 'block',
-        'border-color': 'green',
         'border-width': '5px'
     });
 
-    
-    var myInterval = setInterval(function () { myTimer() }, 5);
-    
-    
-    function myTimer() {
+
+    var displayInterval = setInterval(function () { displayTimer() }, 5);
+
+
+    function displayTimer() {
         $(elementName).css('height', initialSize);
         initialSize += 10;
         if (initialSize > maxHeight) {
             $(elementName).css('height', maxHeight);
-            
-            clearInterval(myInterval);
+
+            clearInterval(displayInterval);
         }
     }
 }
 
 function slowHide(elementName) {
-    
+
     var currentHieght = $(elementName).height();
-    var myInterval = setInterval(function () { myTimer() }, 5);
-    function myTimer() {
+    var myInterval = setInterval(function () { hideTimer() }, 5);
+    function hideTimer() {
         $(elementName).css('height', currentHieght);
         currentHieght -= 10;
         if (currentHieght <= 0) {
             $(elementName).css('height', 0);
             clearInterval(myInterval);
-            $(elementName).css({ 'border-color': 'white' });
-            $(elementName).css({ 'border-width': '1px' });
-            setTimeout(function() {
-                $(elementName).css({ 'display': 'none' });
-            }, 300);
+            //$(elementName).css({ 'border-width': '1px' });
+            //setTimeout(function () {
+            //    $(elementName).css({ 'display': 'none' });
+            //}, 300);
         }
     }
 }
@@ -51,15 +49,15 @@ function startInfoPrinting() {
 
     var textForPrinter = $('#printingSource').val();
     var textForLink = $('#nextPageLabel').val();
-    var linkForNextPage = '';
+    var linkForNextPage = 'AboutPage';
 
     printer({
         selector: '#printingContent',
-        text: textForPrinter ,
+        text: textForPrinter,
         fSuccess: function () {
             var str = $('#printingContent').html();
             $('#printingContent').html(str + "  <a class='blinking' href='#' onclick='showPage(\"" + linkForNextPage + "\");'>" + textForLink + "</a>  ");
-            
+
             //iId = setInterval(function () {
             //    flag = !flag;
             //    $('#printingContent').html(str + (flag ? "  <a href='#' onclick='showPage(\"" + linkForNextPage + "\");'>" + textForLink + "</a>  " : ''));
@@ -72,4 +70,22 @@ function startInfoPrinting() {
         }
     });
 
+}
+
+function showPage(pageName) {
+    slowHide('#monitorDiv');
+    
+    setTimeout(function () {
+        $(".displayWindow").css("display", "none");
+        $(".displayWindow").children().css("display", "none");
+
+        $("#" + pageName).css("display", "block");
+        $("#" + pageName).children().css("display", "block");
+        slowDisplay('#monitorDiv');
+    }, 500);
+
+}
+
+function hideAll() {
+    
 }

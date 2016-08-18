@@ -183,4 +183,16 @@
   <data name="YearsLabel" xml:space="preserve">
     <value>г</value>
   </data>
+  <data name="AboutPageLabel" xml:space="preserve">
+    <value>ОПИСАНИЕ</value>
+  </data>
+  <data name="ContactsPageLabel" xml:space="preserve">
+    <value>КОНТАКТЫ</value>
+  </data>
+  <data name="CVPageLabel" xml:space="preserve">
+    <value>РЕЗЮМЕ</value>
+  </data>
+  <data name="HomePageLabel" xml:space="preserve">
+    <value>ГЛАВНАЯ</value>
+  </data>
 </root>
