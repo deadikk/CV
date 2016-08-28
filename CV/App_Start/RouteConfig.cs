@@ -18,7 +18,7 @@ namespace CV
             "{lang}",
             new { controller = "Home", action = "Index", lang = "ru" }
             );
-
+            
             routes.MapRoute(
             "NotFound",
             "{*url}",

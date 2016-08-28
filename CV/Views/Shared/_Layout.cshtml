@@ -9,15 +9,26 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div id="rootDiv">
-        <canvas class="matrixCanvas" id="bgCanvas"></canvas>
-        <div id="MenuWithContent">
-            @Html.Partial("_MenuPanel", new MenuModel())
-            <div id="monitorDiv">
-                @RenderBody()
-            </div>
+<div id="rootDiv">
+    <div id="languageChooser">
+
+        <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
+            <img src="~/Content/Images/rus.gif" />
+        </a>
+        <a href="@Url.Action("Index", "Home",new {lang = "en"})">
+            <img src="~/Content/Images/usa.gif" />
+        </a>
+
+    </div>
+    <canvas class="matrixCanvas" id="bgCanvas"></canvas>
+
+    <div id="MenuWithContent">
+        @Html.Partial("_MenuPanel", new MenuModel())
+        <div id="monitorDiv">
+            @RenderBody()
         </div>
     </div>
+</div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/js")

@@ -1,3 +1,14 @@
-﻿<div id="AboutPage" class="displayWindow">
-    <h1>ADDITIONAL INFO</h1>
+﻿@model CV.Models.AdditionalInfoModel
+<div id="AboutPage" class="displayWindow">
+    <div id="basicInfoTitle" style="margin: 0; padding: 10px;">
+        @Res.AboutPageLabel
+    </div>
+
+    <div id="additionalInfoDiv">
+        <pre id="additionalInfoPre">
+        @Html.Raw(Model.Info)
+    </pre>
+    </div>
+
+
 </div>

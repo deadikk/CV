@@ -1,7 +1,7 @@
 ﻿function FirstOpen() {
     slowDisplay('#monitorDiv');
-    currentPage = ""
 }
+
 
 function slowDisplay(elementName) {
     var maxHeight = 570;

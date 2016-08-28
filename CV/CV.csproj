@@ -136,12 +136,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AdditionalInfoModel.cs" />
     <Compile Include="Models\BasicInfoModel.cs" />
     <Compile Include="Models\MenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\6_1.jpg" />
+    <Content Include="Content\Images\rus.gif" />
+    <Content Include="Content\Images\usa.gif" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="favicon.ico" />
