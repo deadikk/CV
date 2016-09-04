@@ -227,7 +227,7 @@ namespace CV.App_LocalResources {
         ///- разработка веб-приложений на платформе .Net MVC
         ///- разработка десктоп-приложений: WinForms, WPF
         ///- разработка БД в средах MS Sql, Oracle
-        ///- работа с БД из .net приложений (ORM-Lite, Entity Framework, SQRS, ADO.Net)
+        ///- работа с БД из .net приложений (ORM-Lite, Entity Framework, CQRS, ADO.Net)
         ///- создание веб страниц, с использованием HTML, CSS, JS, JQuery
         ///- разработка и интеграция с системами SalesForce, SAP, Pace.
         /// </summary>

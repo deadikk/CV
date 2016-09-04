@@ -222,7 +222,7 @@ The new version of the patch is applied, banned from wearing a sweater, torn jea
 - web application development using .Net MVC platform
 - development of desktop applications: WinForms, WPF
 - development of a database in MS Sql and Oracle
-- database using inside .net applications (ORM-Lite, Entity Framework, SQRS, ADO.Net)
+- database using inside .net applications (ORM-Lite, Entity Framework, CQRS, ADO.Net)
 - web-pages development using HTML, CSS, JS, JQuery
 - development and integration with SalesForce , SAP, Pace</value>
   </data>

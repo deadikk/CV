@@ -143,8 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\6_1.jpg" />
+    <Content Include="Content\Images\pdf_back.png" />
     <Content Include="Content\Images\rus.gif" />
     <Content Include="Content\Images\usa.gif" />
+    <Content Include="Content\Images\word_back.png" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -189,6 +191,7 @@
     <Content Include="Views\Shared\_BasicInfo.cshtml" />
     <Content Include="Views\Shared\_AdditionalInfo.cshtml" />
     <Content Include="Views\Shared\_MenuPanel.cshtml" />
+    <Content Include="Views\Shared\_CVPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Base\" />
