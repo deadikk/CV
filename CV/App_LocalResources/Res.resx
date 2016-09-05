@@ -225,4 +225,22 @@
 - создание веб страниц, с использованием HTML, CSS, JS, JQuery
 - разработка и интеграция с системами SalesForce, SAP, Pace</value>
   </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="GitHub" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Тел.</value>
+  </data>
+  <data name="Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="VKLabel" xml:space="preserve">
+    <value>ВК</value>
+  </data>
 </root>

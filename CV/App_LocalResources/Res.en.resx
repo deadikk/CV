@@ -226,4 +226,22 @@ The new version of the patch is applied, banned from wearing a sweater, torn jea
 - web-pages development using HTML, CSS, JS, JQuery
 - development and integration with SalesForce , SAP, Pace</value>
   </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="GitHub" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="VKLabel" xml:space="preserve">
+    <value>VK</value>
+  </data>
 </root>

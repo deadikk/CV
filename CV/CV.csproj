@@ -143,10 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\6_1.jpg" />
-    <Content Include="Content\Images\pdf_back.png" />
+    <Content Include="Content\Images\pdf_ru_1000px.png" />
     <Content Include="Content\Images\rus.gif" />
     <Content Include="Content\Images\usa.gif" />
-    <Content Include="Content\Images\word_back.png" />
+    <Content Include="Content\Images\word_ru_1000px.png" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -157,7 +157,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.TTF" />
     <Content Include="Content\Fonts\Matrix_Font.ttf" />
-    <Content Include="App_Data\Docs\Dmytro Strebul.docx" />
+    <Content Include="App_Data\Docs\CV_ru.docx" />
+    <Content Include="App_Data\Docs\CV_en.docx" />
+    <Content Include="App_Data\Docs\CV_en.pdf" />
+    <Content Include="App_Data\Docs\CV_ru.pdf" />
+    <Content Include="Docs\CV_en.docx" />
+    <Content Include="Docs\CV_en.pdf" />
+    <Content Include="Docs\CV_ru.docx" />
+    <Content Include="Docs\CV_ru.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -192,6 +199,7 @@
     <Content Include="Views\Shared\_AdditionalInfo.cshtml" />
     <Content Include="Views\Shared\_MenuPanel.cshtml" />
     <Content Include="Views\Shared\_CVPage.cshtml" />
+    <Content Include="Views\Shared\_ContactsPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Base\" />
