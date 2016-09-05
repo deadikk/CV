@@ -157,14 +157,10 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.TTF" />
     <Content Include="Content\Fonts\Matrix_Font.ttf" />
-    <Content Include="App_Data\Docs\CV_ru.docx" />
-    <Content Include="App_Data\Docs\CV_en.docx" />
-    <Content Include="App_Data\Docs\CV_en.pdf" />
-    <Content Include="App_Data\Docs\CV_ru.pdf" />
-    <Content Include="Docs\CV_en.docx" />
-    <Content Include="Docs\CV_en.pdf" />
-    <Content Include="Docs\CV_ru.docx" />
-    <Content Include="Docs\CV_ru.pdf" />
+    <Content Include="Docs\CV_Dmytro_Strebul_en.docx" />
+    <Content Include="Docs\CV_Dmytro_Strebul_en.pdf" />
+    <Content Include="Docs\CV_Dmytro_Strebul_ru.docx" />
+    <Content Include="Docs\CV_Dmytro_Strebul_ru.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -202,6 +198,7 @@
     <Content Include="Views\Shared\_ContactsPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
