@@ -177,6 +177,15 @@ namespace CV.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Скачать резюме.
+        /// </summary>
+        public static string DownloadCV {
+            get {
+                return ResourceManager.GetString("DownloadCV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         public static string EmailLabel {
@@ -283,6 +292,24 @@ namespace CV.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Дмитрий Стребуль.
+        /// </summary>
+        public static string MyName {
+            get {
+                return ResourceManager.GetString("MyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .Net Разработчик.
+        /// </summary>
+        public static string MySpec {
+            get {
+                return ResourceManager.GetString("MySpec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Продолжить.
         /// </summary>
         public static string nextPageLabel {
@@ -315,6 +342,15 @@ namespace CV.App_LocalResources {
         public static string Skype {
             get {
                 return ResourceManager.GetString("Skype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Направление.
+        /// </summary>
+        public static string Specialization {
+            get {
+                return ResourceManager.GetString("Specialization", resourceCulture);
             }
         }
         

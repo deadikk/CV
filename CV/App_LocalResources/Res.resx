@@ -243,4 +243,16 @@
   <data name="VKLabel" xml:space="preserve">
     <value>ВК</value>
   </data>
+  <data name="DownloadCV" xml:space="preserve">
+    <value>Скачать резюме</value>
+  </data>
+  <data name="MyName" xml:space="preserve">
+    <value>Дмитрий Стребуль</value>
+  </data>
+  <data name="MySpec" xml:space="preserve">
+    <value>.Net Разработчик</value>
+  </data>
+  <data name="Specialization" xml:space="preserve">
+    <value>Направление</value>
+  </data>
 </root>

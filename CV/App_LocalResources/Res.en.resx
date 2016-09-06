@@ -244,4 +244,16 @@ The new version of the patch is applied, banned from wearing a sweater, torn jea
   <data name="VKLabel" xml:space="preserve">
     <value>VK</value>
   </data>
+  <data name="DownloadCV" xml:space="preserve">
+    <value>Download CV</value>
+  </data>
+  <data name="MyName" xml:space="preserve">
+    <value>Dmytro Strebul</value>
+  </data>
+  <data name="MySpec" xml:space="preserve">
+    <value>.Net Developer</value>
+  </data>
+  <data name="Specialization" xml:space="preserve">
+    <value>Specialty</value>
+  </data>
 </root>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            border: 0;
+            padding: 20px;
+            margin: 0;
+            overflow: auto;
+            background-color: black;
+            color: rgb(0, 200, 0);
+            font-family: Matrix_Font, Courier New, Courier, monospace;
+            text-shadow: 0 0 3px #00e600;
+            text-shadow: 0 0 3px rgba(0, 230, 0, 0.4);
+        }
+
+        .spoiler_links {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(0, 80, 0);
+            margin-top: 2%;
+            font-size: 140%;
+        }
+
+        .spoiler_body {
+            display: none;
+            cursor: pointer;
+            background-color: rgb(0, 40, 0);
+        }
+
+        a {
+            color: greenyellow;
+            text-decoration: none;
+        }
+
+            a:after, a:visited, a:active, a:before, a:current {
+                color: greenyellow;
+                text-decoration: none;
+            }
+
+
+        #infoTable {
+            width: 100%;
+            font-family: Courier New, Courier, monospace;
+        }
+
+            #infoTable td {
+                padding: 2px 5px;
+            }
+
+        #basicInfoTitle {
+            display: none;
+        }
+
+        #cvTable {
+            width: 100%;
+        }
+
+            #cvTable td {
+                text-align: center;
+                padding: 2%;
+            }
+
+            #cvTable img {
+                width: 20%;
+            }
+
+        #contactsTable {
+            width: 100%;
+        }
+
+            #contactsTable td {
+                padding: 2%;
+            }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .title {
+            font-size: 150%;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+
+        .sub-title {
+            font-size: 120%;
+        }
+
+        #languageLeft {
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+        }
+
+        #languageRight {
+            position: fixed;
+            z-index: 2000;
+            right: 0;
+        }
+
+        @@media only screen and (orientation: landscape) {
+            #rootMobilePage {
+                width: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            #header {
+                width: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.spoiler_links').click(function () {
+                $(this).parent().children('div.spoiler_body').slideToggle('normal');
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="position: absolute; left: 0; width: 10%;">
+        <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
+            <img src="~/Content/Images/rus.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
+        </a>
+
+        <a href="@Url.Action("Index", "Home", new {lang = "en"})">
+            <img src="~/Content/Images/usa.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
+        </a>
+    </div>
+
+
+
+    <div id="header">
+        <span class="title">@Res.MyName</span>
+        <span class="title sub-title">@Res.MySpec</span>
+    </div>
+
+    @RenderBody()
+
+
+</body>
+</html>

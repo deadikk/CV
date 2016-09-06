@@ -1,0 +1,71 @@
+﻿@using CV.Models
+@{
+    var basicInfoModel = new BasicInfoModel();
+}
+
+<div id="rootMobilePage">
+    <div>
+        <a href="" class="spoiler_links">@Res.BasicInfoTitle</a>
+        <div class="spoiler_body">
+
+            <div id="mainInformation">
+                <table id="infoTable">
+                    <tr>
+                        <td class="align-right">@Res.AgeLabel:</td>
+                        <td>@basicInfoModel.Age</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.SexLabel:</td>
+                        <td>@basicInfoModel.Sex</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.CountryLabel:</td>
+                        <td>@basicInfoModel.Country</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.CityLabel:</td>
+                        <td>@basicInfoModel.City</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.Specialization:</td>
+                        <td>.Net/ASP.Net</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.LevelLabel:</td>
+                        <td>@basicInfoModel.Level</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.ExperienceLabel:</td>
+                        <td>@basicInfoModel.Experience</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">@Res.LocationLabel:</td>
+                        <td><a id="companyLabel" target="_blank" href="@Res.CurrentCompanyLink">@Res.CurrentCompany</a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div>
+        <a href="" class="spoiler_links">@Res.CVPageLabel</a>
+        <div class="spoiler_body">
+            <div id="CVSection">
+                @Html.Partial("_CVPage")
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <a href="" class="spoiler_links">@Res.ContactsPageLabel</a>
+        <div class="spoiler_body">
+            <div id="Contacts">
+                @Html.Partial("_ContactsPage")
+            </div>
+        </div>
+    </div>
+</div>
