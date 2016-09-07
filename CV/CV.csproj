@@ -142,6 +142,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Fonts\Matrix_Font.svg" />
+    <Content Include="Content\Fonts\Matrix_UpperOnly_Font.svg" />
     <Content Include="Content\Images\6_1.jpg" />
     <Content Include="Content\Images\pdf_ru_1000px.png" />
     <Content Include="Content\Images\rus.gif" />
@@ -161,6 +163,14 @@
     <Content Include="Docs\CV_Dmytro_Strebul_en.pdf" />
     <Content Include="Docs\CV_Dmytro_Strebul_ru.docx" />
     <Content Include="Docs\CV_Dmytro_Strebul_ru.pdf" />
+    <Content Include="Content\Fonts\Matrix_Font.eot" />
+    <Content Include="Content\Fonts\Matrix_Font.otf" />
+    <Content Include="Content\Fonts\Matrix_Font.woff" />
+    <Content Include="Content\Fonts\Matrix_UpperOnly_Font.eot" />
+    <Content Include="Content\Fonts\Matrix_UpperOnly_Font.otf" />
+    <Content Include="Content\Fonts\Matrix_UpperOnly_Font.woff" />
+    <None Include="Properties\PublishProfiles\1gb publish.pubxml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

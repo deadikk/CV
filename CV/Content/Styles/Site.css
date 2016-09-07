@@ -12,12 +12,14 @@
 
 @font-face {
     font-family: 'Matrix_UpperOnly_Font';
-    src: url('../Fonts/Matrix_UpperOnly_Font.TTF') format('truetype');
+    src: url('../Fonts/Matrix_UpperOnly_Font.eot'); 
+    src: url('../Fonts/Matrix_UpperOnly_Font.ttf')  format('truetype')
 }
 
 @font-face {
     font-family: 'Matrix_Font';
-    src: url('../Fonts/Matrix_Font.ttf') format('truetype');
+    src: url('../Fonts/Matrix_Font.eot'); 
+    src: url('../Fonts/Matrix_Font.ttf')  format('truetype')
 }
 
 #rootDiv {
