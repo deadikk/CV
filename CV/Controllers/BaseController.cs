@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Globalization;
+using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Threading;
 using System.Web.Mvc;
+using WebGrease.Css.Ast.Selectors;
 
 namespace CV.Controllers
 {
@@ -16,6 +18,14 @@ namespace CV.Controllers
                 string.Empty : 
                     requestContext.RouteData.Values["lang"] as string ?? 
                     string.Empty;
+
+            var userBrowserLanguages = requestContext.HttpContext?.Request?.UserLanguages;
+            if (userBrowserLanguages != null && (langCode == string.Empty && userBrowserLanguages.Any()))
+            {
+                langCode = userBrowserLanguages[0].Substring(0,2);
+            }
+
+
             var fullLangCode = GetLocalization(langCode);
 
             var ci = new CultureInfo(fullLangCode);

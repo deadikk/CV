@@ -8,6 +8,7 @@
     color: rgb(0, 200, 0);
     font-family: Matrix_Font, Courier New, Courier, monospace;
     text-shadow: 0 0 3px rgba(0, 230, 0, 0.4);
+    cursor: url(../Images/arrow.cur), pointer;
 }
 
 @font-face {
@@ -119,6 +120,7 @@
 a {
     color: greenyellow;
     text-decoration: none;
+    cursor: url(../Images/hand.cur), pointer;
 }
 
     a:after, a:visited, a:active, a:before, a:current {

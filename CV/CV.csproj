@@ -145,6 +145,9 @@
     <Content Include="Content\Fonts\Matrix_Font.svg" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.svg" />
     <Content Include="Content\Images\6_1.jpg" />
+    <Content Include="Content\Images\arrow.cur" />
+    <Content Include="Content\Images\hand.cur" />
+    <Content Include="Content\Images\logo.gif" />
     <Content Include="Content\Images\pdf_ru_1000px.png" />
     <Content Include="Content\Images\rus.gif" />
     <Content Include="Content\Images\usa.gif" />

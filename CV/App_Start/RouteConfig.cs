@@ -16,13 +16,13 @@ namespace CV
             routes.MapRoute(
             "lang",
             "{lang}",
-            new { controller = "Home", action = "Index", lang = "ru" }
+            new { controller = "Home", action = "Index" }
             );
             
             routes.MapRoute(
             "NotFound",
             "{*url}",
-            new { controller = "Home", action = "Index", lang = "ru" }
+            new { controller = "Home", action = "Index" }
             );
         }
     }
