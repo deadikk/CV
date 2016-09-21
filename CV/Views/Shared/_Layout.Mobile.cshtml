@@ -13,7 +13,7 @@
             src: url('../../Content/Fonts/Matrix_UpperOnly_Font.eot');
             src: url('../../Content/Fonts/Matrix_UpperOnly_Font.ttf') format('truetype');
         }
-       
+
         @@font-face {
             font-family: 'Matrix_Font';
             src: url('../../Content/Fonts/Matrix_Font.eot');
@@ -22,7 +22,7 @@
 
         body {
             border: 0;
-            padding: 20px;
+            padding: 0;
             margin: 0;
             overflow: auto;
             background-color: black;
@@ -30,6 +30,13 @@
             font-family: Matrix_Font, Courier New, Courier, monospace;
             text-shadow: 0 0 3px #00e600;
             text-shadow: 0 0 3px rgba(0, 230, 0, 0.4);
+        }
+
+        #bgCanvas {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
         }
 
         .spoiler_links {
@@ -120,50 +127,83 @@
             right: 0;
         }
 
-        @@media only screen and (orientation: landscape) {
-            #rootMobilePage {
-                width: 60%;
-                display: block;
-                margin: 0 auto;
-            }
 
+
+        @@media only screen and (orientation: landscape) {
+           
             #header {
                 width: 60%;
                 display: block;
                 margin: 0 auto;
             }
+
+            #rootDiv {
+                width: 70%;
+                display: block;
+                padding: 5% 15%;
+                position: absolute;
+                z-index: 10;
+            }
+             
+        }
+
+         @@media only screen and (orientation: portrait) {
+           
+            #rootDiv {
+                width: 90%;
+                display: block;
+                padding: 5%;
+                position: absolute;
+                z-index: 10;
+            }
         }
     </style>
     @Scripts.Render("~/bundles/jquery")
+
+    <script src="~/Scripts/matrixDrawer.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.spoiler_links').click(function () {
                 $(this).parent().children('div.spoiler_body').slideToggle('normal');
                 return false;
             });
+            initiateMatrix();
+
         });
+
+        window.addEventListener("orientationchange", function () {
+            initiateMatrix();
+        }, false);
     </script>
+
+
+
+
 </head>
 <body>
-    <div style="position: absolute; left: 0; width: 10%; margin-top: -10px;">
-        <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
-            <img src="~/Content/Images/rus.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
-        </a>
+    <canvas class="matrixCanvas" id="bgCanvas"></canvas>
 
-        <a href="@Url.Action("Index", "Home", new {lang = "en"})">
-            <img src="~/Content/Images/usa.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
-        </a>
+    <div id="rootDiv">
+
+        <div style="position: absolute; left: 0; width: 10%; margin-top: -10px;">
+            <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
+                <img src="~/Content/Images/rus.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
+            </a>
+
+            <a href="@Url.Action("Index", "Home", new {lang = "en"})">
+                <img src="~/Content/Images/usa.gif" style="width: 90%; display: block; margin: 10%; opacity: 0.6" />
+            </a>
+        </div>
+
+
+
+        <div id="header">
+            <span class="title">@Res.MyName</span>
+            <span class="title sub-title">@Res.MySpec</span>
+        </div>
+
+        @RenderBody()
+
     </div>
-
-
-
-    <div id="header">
-        <span class="title">@Res.MyName</span>
-        <span class="title sub-title">@Res.MySpec</span>
-    </div>
-
-    @RenderBody()
-
-
 </body>
 </html>
