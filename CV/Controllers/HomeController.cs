@@ -23,7 +23,7 @@ namespace CV.Controllers
             {
                 logger.WriteLog($"Visit at {DateTime.UtcNow.ToShortDateString()} : {DateTime.UtcNow.ToLongTimeString()} - {System.Web.HttpContext.Current.Request.Url.AbsolutePath}");
             }
-            catch (Exception ex)
+            catch
             {
                 //ignore exception
             }
