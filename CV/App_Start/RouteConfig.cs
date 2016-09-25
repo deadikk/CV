@@ -18,7 +18,12 @@ namespace CV
             "{lang}",
             new { controller = "Home", action = "Index" }
             );
-            
+            routes.MapRoute(
+            "Admin",
+            "{controller}/{action}",
+            new { controller = "Home", action = "Index" }
+            );
+
             routes.MapRoute(
             "NotFound",
             "{*url}",

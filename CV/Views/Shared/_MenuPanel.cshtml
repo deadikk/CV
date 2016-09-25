@@ -3,6 +3,7 @@
     <ul id="menuList">
         @foreach (var item in Model.MenuList)
         {
+            if (ViewBag.HideMenu != null && ViewBag.HideMenu == true) { break;}
             <li>
                 <a href="#" onclick="showPage('@item.ItemName');">@item.ItemLabel</a>
             </li>

@@ -1,5 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Threading.Tasks;
+using System.Web.Mvc;
 using CV.App_LocalResources;
+using CV.Workers;
 
 namespace CV.Controllers
 {
@@ -7,8 +10,23 @@ namespace CV.Controllers
     {
         public ActionResult Index()
         {
+            
             ViewBag.Title = Res.MyName;
+            LogVisit(new XmlLogger());
+
             return View();
+        }
+        
+        private static void LogVisit(ILogger logger)
+        {
+            try
+            {
+                logger.WriteLog($"Visit at {DateTime.UtcNow.ToShortDateString()} : {DateTime.UtcNow.ToLongTimeString()} - {System.Web.HttpContext.Current.Request.Url.AbsolutePath}");
+            }
+            catch (Exception ex)
+            {
+                //ignore exception
+            }
         }
 
     }

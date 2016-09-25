@@ -6,30 +6,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    <link href="~/Content/Styles/Site.css" rel="stylesheet"/>
+    <link href="~/Content/Styles/Site.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/Content/Images/logo.gif" type="image/gif">
 </head>
 <body>
-<div id="rootDiv">
-    <div id="languageChooser">
+    <div id="rootDiv">
+        <div id="languageChooser">
 
-        <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
-            <img src="~/Content/Images/rus.gif" />
-        </a>
-        <a href="@Url.Action("Index", "Home",new {lang = "en"})">
-            <img src="~/Content/Images/usa.gif" />
-        </a>
+            <a href="@Url.Action("Index", "Home", new {lang = "ru"})">
+                <img src="~/Content/Images/rus.gif" />
+            </a>
+            <a href="@Url.Action("Index", "Home",new {lang = "en"})">
+                <img src="~/Content/Images/usa.gif" />
+            </a>
 
-    </div>
-    <canvas class="matrixCanvas" id="bgCanvas"></canvas>
+        </div>
+        <canvas class="matrixCanvas" id="bgCanvas"></canvas>
 
-    <div id="MenuWithContent">
-        @Html.Partial("_MenuPanel", new MenuModel())
-        <div id="monitorDiv">
-            @RenderBody()
+        <div id="MenuWithContent">
+
+            @Html.Partial("_MenuPanel", new MenuModel())
+            
+            <div id="monitorDiv">
+                @RenderBody()
+            </div>
         </div>
     </div>
-</div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/js")
