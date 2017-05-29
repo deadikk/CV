@@ -328,6 +328,42 @@ namespace CV.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to deadik@gmail.com.
+        /// </summary>
+        public static string RealEmail {
+            get {
+                return ResourceManager.GetString("RealEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0737899987.
+        /// </summary>
+        public static string RealPhone {
+            get {
+                return ResourceManager.GetString("RealPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dimadod.
+        /// </summary>
+        public static string RealSkype {
+            get {
+                return ResourceManager.GetString("RealSkype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://vk.com/dima_strebul.
+        /// </summary>
+        public static string RealVK {
+            get {
+                return ResourceManager.GetString("RealVK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Пол.
         /// </summary>
         public static string SexLabel {

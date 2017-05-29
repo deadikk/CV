@@ -1,4 +1,5 @@
-﻿
+﻿@using CV.Extensions
+
 <div id="ContactsPage" class="displayWindow">
     <div id="basicInfoTitle" style="margin: 0; padding: 10px;">
         @Res.ContactsPageLabel
@@ -9,23 +10,23 @@
         <table id="contactsTable">
             <tr>
                 <td class="align-right">@Res.EmailLabel</td>
-                <td><a href="mailto:deadik@gmail.com">deadik@gmail.com</a></td>
+                <td><a href="mailto:@Res.RealEmail">@Res.RealEmail</a></td>
             </tr>
             <tr>
                 <td class="align-right">@Res.PhoneLabel</td>
-                <td><a href="tel:0931137419">(093) 113-74-19</a></td>
+                <td><a href="tel:@Res.RealPhone">@Res.RealPhone.GetFullPhoneWithBrackets()</a></td>
             </tr>
             <tr>
                 <td class="align-right">@Res.Skype</td>
-                <td><a href="skype:dimadod?chat">dimadod</a></td>
+                <td><a href="skype:@Res.RealSkype?chat">Dima Strebul</a></td>
             </tr>
             <tr>
                 <td class="align-right">@Res.VKLabel</td>
-                <td><a href="http://vk.com/dima_strebul" target="_blank">Dima Strebul</a></td>
+                <td><a href="@Res.RealVK" target="_blank">Dima Strebul</a></td>
             </tr>
             <tr>
                 <td class="align-right">@Res.Viber</td>
-                <td><a href="viber:+380931137419">(093) 113-74-19</a></td>
+                <td><a href="viber:@Res.RealPhone.GetFullPhoneWithCode()">@Res.RealPhone.GetFullPhoneWithBrackets()</a></td>
             </tr>
             <tr>
                 <td class="align-right">@Res.GitHub</td>

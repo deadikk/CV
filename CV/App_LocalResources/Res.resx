@@ -255,4 +255,16 @@
   <data name="Specialization" xml:space="preserve">
     <value>Направление</value>
   </data>
+  <data name="RealEmail" xml:space="preserve">
+    <value>deadik@gmail.com</value>
+  </data>
+  <data name="RealPhone" xml:space="preserve">
+    <value>0737899987</value>
+  </data>
+  <data name="RealSkype" xml:space="preserve">
+    <value>dimadod</value>
+  </data>
+  <data name="RealVK" xml:space="preserve">
+    <value>http://vk.com/dima_strebul</value>
+  </data>
 </root>
