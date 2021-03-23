@@ -196,36 +196,6 @@ For more details please follow the link:</value>
   <data name="HomePageLabel" xml:space="preserve">
     <value>HOME</value>
   </data>
-  <data name="AdditionalSkills" xml:space="preserve">
-    <value>
-
- XXXAdditional information about this sample:xxx
-
- XXXEnhanced eruditionxxx
-In addition to the data stored in the ROM about development, there are a lot of information and general knowledge in variety areas: from botany to astronomy. This improvement allows this new version to solve different problems without additional resources and expertise.
-
- XXXBuilt-in self-learningxxx
-Observing the previous generation, it has been revealed the disadvantage that there is no desire to learn and evolve. Education data was stored in read-only mode, which led to problems with the recording of new data in the programmer. With new built-in self-learning plugin, these problems no longer occur. This copy is prone to self-directed learning and development, especially in the field of software development. The module has been tested on Microsoft Virtual Academy courses and ITVDN from Cyberbionics, which showed a high level of assimilation of information and adaptation to the received knowledge.
-
- XXXIncreased performance levelxxx
-Due to the necessity to perform tasks in a short time and the incidence of the sudden deadlines, it has been successfully increased rate of efficiency, responsibility and commitment. As a result, it managed to achieve the possibility to activate such modes as «overtime working» and «homework night tasks» for a small compensation by cookies and coffee. Thus it was possible to achieve stable operation with 99% uptime.
-
- XXXImproved powerxxx
-Because of activation of the self-improvement module for testing a few years ago, this model began  uncontrolled improvement in different directions, including different kinds of sports: bodybuilding, snowboarding, moto-cycling etc. At first glance, it may seems not important point, however, no one knows when it can be useful to transfer a table or a server in another room. The bonus is a biological organism, with almost invulnerable immunity, that is essential for long-term work on the project without time losing because of illness.
-
- XXXAppearance patchxxx
-The new version of the patch is applied, banned from wearing a sweater, torn jeans and dirty boots. This fix allows the developer to take on meetings with clients or superiors.</value>
-  </data>
-  <data name="MainSkills" xml:space="preserve">
-    <value>
- XXXThe experience gained during study and work contains following skills:xxx
-- web application development using .Net MVC platform
-- development of desktop applications: WinForms, WPF
-- development of a database in MS Sql and Oracle
-- database using inside .net applications (ORM-Lite, Entity Framework, CQRS, ADO.Net)
-- web-pages development using HTML, CSS, JS, JQuery
-- development and integration with SalesForce , SAP, Pace</value>
-  </data>
   <data name="EmailLabel" xml:space="preserve">
     <value>Email</value>
   </data>
@@ -267,5 +237,35 @@ The new version of the patch is applied, banned from wearing a sweater, torn jea
   </data>
   <data name="RealVK" xml:space="preserve">
     <value>http://vk.com/dima_strebul</value>
+  </data>
+  <data name="AdditionalSkills" xml:space="preserve">
+    <value>
+
+ XXXAdditional information about this sample:xxx
+
+ XXXEnhanced eruditionxxx
+In addition to the data stored in the ROM about development, there are a lot of information and general knowledge in variety areas: from botany to astronomy. This improvement allows this new version to solve different problems without additional resources and expertise.
+
+ XXXBuilt-in self-learningxxx
+Observing the previous generation, it has been revealed the disadvantage that there is no desire to learn and evolve. Education data was stored in read-only mode, which led to problems with the recording of new data in the programmer. With new built-in self-learning plugin, these problems no longer occur. This copy is prone to self-directed learning and development, especially in the field of software development. The module has been tested on Microsoft Virtual Academy, Udemy etc. and showed a high assimilation level of information and adaptation to the received knowledge.
+
+ XXXIncreased performance levelxxx
+Due to the necessity to perform tasks in a short time and the incidence of the sudden deadlines, it has been successfully increased rate of efficiency, responsibility and commitment. As a result, it managed to achieve the possibility to activate such modes as «overtime working» and «homework night tasks» for a small compensation by cookies and coffee. Thus it was possible to achieve stable operation with 99% uptime.
+
+ XXXImproved powerxxx
+Because of activation of the self-improvement module for testing a few years ago, this model began  uncontrolled improvement in different directions, including different kinds of sports: bodybuilding, snowboarding, moto-cycling etc. At first glance, it may seems not important point, however, no one knows when it can be useful to transfer a table or a server in another room. The bonus is a biological organism, with almost invulnerable immunity, that is essential for long-term work on the project without time losing because of illness.
+
+ XXXAppearance patchxxx
+The new version of the patch is applied, banned from wearing a sweater, torn jeans and dirty boots. This fix allows the developer to take on meetings with clients or superiors.</value>
+  </data>
+  <data name="MainSkills" xml:space="preserve">
+    <value>
+ XXXThe experience gained during study and work contains following skills:xxx
+- web application and services development using .Net platform
+- development of desktop applications: WinForms, WPF, WCF
+- DB development in MS Sql and Oracle
+- database using inside .net applications (ORM-Lite, Entity Framework, CQRS, ADO.Net)
+- web-pages development using HTML, CSS, JS, JQuery
+- development and integration with SalesForce , SAP, Pace etc.</value>
   </data>
 </root>

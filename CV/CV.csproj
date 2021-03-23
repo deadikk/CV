@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -166,16 +167,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.TTF" />
     <Content Include="Content\Fonts\Matrix_Font.ttf" />
-    <Content Include="Docs\CV_Dmytro_Strebul_en.docx" />
-    <Content Include="Docs\CV_Dmytro_Strebul_en.pdf" />
-    <Content Include="Docs\CV_Dmytro_Strebul_ru.docx" />
-    <Content Include="Docs\CV_Dmytro_Strebul_ru.pdf" />
     <Content Include="Content\Fonts\Matrix_Font.eot" />
     <Content Include="Content\Fonts\Matrix_Font.otf" />
     <Content Include="Content\Fonts\Matrix_Font.woff" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.eot" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.otf" />
     <Content Include="Content\Fonts\Matrix_UpperOnly_Font.woff" />
+    <Content Include="Docs\CV_Dmytro_Strebul_en.docx" />
+    <Content Include="Docs\CV_Dmytro_Strebul_en.pdf" />
     <None Include="Properties\PublishProfiles\1gb publish.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

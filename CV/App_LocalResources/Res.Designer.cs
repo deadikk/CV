@@ -19,7 +19,7 @@ namespace CV.App_LocalResources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Res {
@@ -251,12 +251,12 @@ namespace CV.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to 
         /// XXXОпыт, накопленный за время обучения и работы включает следующие навыки:xxx
-        ///- разработка веб-приложений на платформе .Net MVC
-        ///- разработка десктоп-приложений: WinForms, WPF
+        ///- разработка веб-приложений и сервисов на платформе .Net, .Net Core
+        ///- разработка десктоп-приложений: WinForms, WPF, WCF
         ///- разработка БД в средах MS Sql, Oracle
-        ///- работа с БД из .net приложений (ORM-Lite, Entity Framework, CQRS, ADO.Net)
-        ///- создание веб страниц, с использованием HTML, CSS, JS, JQuery
-        ///- разработка и интеграция с системами SalesForce, SAP, Pace.
+        ///- работа с БД из .Net приложений (ORM-Lite, Entity Framework, CQRS, ADO.Net)
+        ///- создание веб страниц, с использованием HTML, CSS, JS, JQuery, Dart, Angular
+        ///- разработка и интеграция с системами SalesForce, SAP, Pace и тд.
         /// </summary>
         public static string MainSkills {
             get {
@@ -274,7 +274,7 @@ namespace CV.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Средний.
+        ///   Looks up a localized string similar to Синьор.
         /// </summary>
         public static string Middle {
             get {
